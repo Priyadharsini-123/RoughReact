@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Form, Button, Card } from "react-bootstrap";
-import Table from "react-bootstrap/Table";
-import Rupee from '../assets/images/Rupee.png'
-import Seat from "../assets/images/seat.png";
-import Train from "../assets/images/train.png";
-import Rough from "./Rough";
+import {  Button, Card } from "react-bootstrap";
+
+import Rupee from "../assets/images/Indian Rs.png";
+import Seat from "../assets/images/Train Seat.png";
+import Train from "../assets/images/Train Station.png";
+
 const FareRough = () => {
   const [searchValue, setSearchValue] = useState("");
   const [inputValue, setInputValue] = useState("");
@@ -59,7 +59,7 @@ const FareRough = () => {
                     src={Train}
                     alt="Train Station"
                     className="mt-1 mx-auto mt-md-0 d-block"
-                    style={{ height: "40px", width: "40px" }}
+                    style={{ height: "42px", width: "42px" }}
                   />
                 </div>
                 <div
