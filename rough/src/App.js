@@ -8,7 +8,7 @@ import Rough from './pages/Rough';
 const App = () => {
   return (
     <>
-     {/* <Fare/>  */}
+     
      <FareRough/> 
      <Rough/>
     </>
