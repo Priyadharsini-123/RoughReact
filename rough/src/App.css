@@ -515,12 +515,13 @@ select{
   border: none;
   border-bottom: 2px solid #0077b2;
 }
-.table{
+/* .table{
   padding-top: 40px;
-  box-shadow: "0 4px 8px 0 rgba(0,0,0,0.2)";
-            border-radius: "5px";
-            width: "600px";
-}
+  max-Width: "600px";
+  width: "100%";
+  box-Shadow: "0 4px 8px 0 rgba(0,0,0,0.2)";
+  border-Radius: "5px";
+} */
 .button{
   background-color: #0077b2;
   margin: 0 auto;
@@ -795,4 +796,6 @@ background-image: url("./assets/images/TrainNotification.webp");
     .fonts{
       font-size: 16px;
     }
-    
+    .navimg{
+      margin-left: -33px;
+    }
