@@ -1,13 +1,16 @@
-// import React from "react";
 // import { useState } from "react";
-// import Table from "react-bootstrap/Table";
-// import Rupee from "../assets/images/Train Station.png";
-// import Seat from "../assets/images/Train Seat.png";
-// import Train from "../assets/images/Indian Rs.png";
-// import { Form, Button, Card } from "react-bootstrap"; // Assuming Material-UI is used for styling
-// const Fare = () => {
-//   const [searchValue, setSearchValue] = React.useState("");
+// import {  Button, Card } from "react-bootstrap";
 
+// // import Rupee from "../assets/images/Indian Rs.png";
+// // import Seat from "../assets/images/Train Seat.png";
+// // import Train from "../assets/images/Train Station.png";
+
+// const Fare = () => {
+//   const [searchValue, setSearchValue] = useState("");
+//   const [inputValue, setInputValue] = useState("");
+//   const clearInput = () => {
+//     setInputValue("");
+//   };
 //   const handleSearchSubmit = () => {
 //     // Logic for handling search submit
 //     console.log("Search submitted:", searchValue);
@@ -16,33 +19,24 @@
 //     style: "currency",
 //     currency: "INR",
 //   });
-//   const [inputValue, setInputValue] = useState("");
-
-//   const handleChange = (event) => {
-//     setInputValue(event.target.value);
-//   };
-
-//   const clearInput = () => {
-//     setInputValue("");
-//   };
 //   return (
-//     <>
-//       <div style={{ width: '600px', height: '400px', margin: '0 auto' }}>
-//         <div
-//           className="card-header  primary-background px-0 mx-md-0 border"
-//           style={{
-//            maxWidth: "600px",
+//     <div className="d-flex justify-content-center">
+//       <Card
+//         className=""
+//         style={{
+//           margin:'12px',
+//           maxWidth: "600px",
 //           width: "100%",
 //           boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
 //           borderRadius: "5px",
-//           }}
-//         >
+//         }}
+//       >
+//         <div className=" px-0">
 //           {/* <============================Nav bar Option icon start=======================> */}
-
-//           <ul className="nav header-links nav-pills nav-pills-warning nav-pills-icons justify-content-around p-0">
-//             <li>
+//           <ul className="nav header-links  justify-content-around ">
+//             <li className="nav-item">
 //               <a role="tablist" className="nav-link header-links" href="#">
-//                 <div className="img-container p-2">
+//                 <div className="img-container  navimg">
 //                   <img
 //                     src={Seat}
 //                     alt="Seat Availability"
@@ -59,15 +53,14 @@
 //                 </div>
 //               </a>
 //             </li>
-//             {/* <train station start*/}
 //             <li className="nav-item">
 //               <a role="tablist" className="nav-link header-links" href="#">
-//                 <div className="img-container p-2">
+//                 <div className="img-container  ">
 //                   <img
 //                     src={Train}
-//                     alt=" train Station"
+//                     alt="Train Station"
 //                     className="mt-1 mx-auto mt-md-0 d-block"
-//                     style={{ height: "40px", width: "40px" }}
+//                     style={{ height: "42px", width: "42px" }}
 //                   />
 //                 </div>
 //                 <div
@@ -78,17 +71,14 @@
 //                 </div>
 //               </a>
 //             </li>
-//             {/* <train station end*/}
-
-//             {/* train fare start*/}
 //             <li className="nav-item">
 //               <a role="tablist" className="nav-link header-links" href="#">
-//                 <div className="img-container p-2">
+//                 <div className="img-container navimg">
 //                   <img
 //                     src={Rupee}
-//                     alt="train fare"
+//                     alt="Train Fare"
 //                     className="mt-1 mx-auto mt-md-0 d-block"
-//                     style={{ width: "40px", height: "40px" }}
+//                     style={{ height: "40px", width: "40px" }}
 //                   />
 //                 </div>
 //                 <div
@@ -101,47 +91,45 @@
 //               </a>
 //             </li>
 //           </ul>
-//           {/* train fare end*/}
+//         </div>
+//         {/* <============================Nav bar Option icon end=======================> */}
 
-//           {/* <============================Nav bar Option icon end=======================> */}
-//           {/* <============================Check for fare start=======================> */}
-//           {/* <div>
-//             <h1
-//               class="text-center"
-//               style={{ margin: ".67em 0 .2em", FontSize: "1rem" }}
-//             >
-//               {" "}
-//               Check for Fare{" "}
-//             </h1>
+//         {/* <============================Check for fare start=======================> */}
+//         <div>
+//           <h1
+//             class="text-center"
+//             style={{ margin: ".67em 0 .2em", FontSize: "1rem" }}
+//           >
+//             {" "}
+//             Check for Fare{" "}
+//           </h1>
+//           </div>
+//           <div className="text-center my-3">
+//             <div className="col-8 col-sm-6 d-inline-block pl-0">
+//               <div className="underline-text-input">
+//                 <input
+//                   type="text"
+//                   placeholder="Search Train"
+//                   className="underline-text-input-field"
+//                 />
 
-//             <div className="text-center my-3">
-//               <div className="col-8 col-sm-6 d-inline-block pl-0">
-//                 <div className="underline-text-input">
-//                   <input
-//                     type="text"
-//                     placeholder="Search Train"
-//                     className="underline-text-input-field"
-//                   />
-
-//                   <span className="cancel-icon" onClick={clearInput}>
-//                     &#x2715;
-//                   </span>
-//                 </div>
-//               </div>
-//               <div className="d-inline-block">
-//                 <Button
-//                   style={{ background: "#0077b2" }}
-//                   onClick={handleSearchSubmit}
-//                 >
-//                   Search
-//                 </Button>
+//                 <span className="cancel-icon" onClick={clearInput}>
+//                   &#x2715;
+//                 </span>
 //               </div>
 //             </div>
-//           </div> */}
+//             <div className="d-inline-block">
+//               <Button
+//                 style={{ background: "#0077b2" }}
+//                 onClick={handleSearchSubmit}
+//               >
+//                 Search
+//               </Button>
+//             </div>
+//           </div>
 //           {/* <============================Check for fare end=======================> */}
-
 //           {/* <============================Paasenger Catogory choose row start=======================> */}
-//            <div className="row">
+//           <div className="row">
 //             {/* From row start */}
 //             <div className="col">
 //               <div
@@ -192,11 +180,9 @@
 //                 </select>
 //               </div>
 //             </div>
-//           </div> 
-
+//           </div>
 //           {/* To row end */}
 //           {/* Date row start */}
-
 //           <div className="row">
 //             <div className="col">
 //               <div
@@ -303,47 +289,31 @@
 //           </div>
 
 //           {/* Quota row end  */}
-// {/* <============================Paasenger Catogory choose row start=======================> */}
-//           <button style={{backgroundColor: '#0077b2',
-//   margin: '0 auto',
-//   display: 'flex',
-//   justifyContent: 'center',
-//   marginTop: '30px',
-//   color: '#fff',
-//   borderRadius: '2px',
-//   marginBottom: '10px',
-//   border:'none'}}>Get fare</button>
-//         </div>
-//         <div className="table">
-//         <Card>
-//       <Card.Body>
-//         <Card.Title>Fare Details</Card.Title>
-//         <Table striped bordered hover>
-//           <tbody>
-//             <tr>
-//               <td>Base Charge</td>
-//               <td>{formatter.format(4898)}</td>
-//             </tr>
-//             <tr>
-//               <td>Reservation Charge</td>
-//               <td>{formatter.format(60)}</td>
-//             </tr>
-//             <tr>
-//               <td>GST</td>
-//               <td>{formatter.format(75)}</td>
-//             </tr>
-//             <tr>
-//               <td>TOTAL</td>
-//               <td>{formatter.format(5033)}</td>
-//             </tr>
-//           </tbody>
-//         </Table>
-//       </Card.Body>
-//     </Card>
-  
-//         </div>
-//       </div>
-//     </>
+//           {/* <============================Paasenger Catogory choose row end=======================> */}
+        
+//         <button
+//           style={{
+//             backgroundColor: "#0077b2",
+//             margin: "0 auto",
+//             display: "flex",
+//             justifyContent: "center",
+//             marginTop: "30px",
+//             color: "#fff",
+//             borderRadius: "2px",
+//             marginBottom: "10px",
+//             border: "none",
+//           }}
+//         >
+//           Get fare
+//         </button>
+        
+//       </Card>
+
+
+      
+//     </div>
+   
+   
 //   );
 // };
 

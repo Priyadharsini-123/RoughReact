@@ -5,12 +5,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import FareRough from './pages/FareRough';
 import Rough from './pages/Rough';
 import Choose from './pages/Choose'
+import Faq from './pages/Faq';
+import FareDetails from './pages/FareDetails';
+import Seat from './SeatAvaliblity';
+
 const App = () => {
   return (
     <>
-     <Choose/>
-     {/* <FareRough/> 
-     <Rough/> */}
+    <Seat/>
+      {/* <Fare/>
+    <FareDetails/> */}
+     {/* <Faq/> */}
+     
     </>
   )
 }
