@@ -11,9 +11,7 @@
   width: 200px
 }
 
-marginBottom: "20px",
-                  paddingLeft: "10px",
-                  paddingRight: "15px",
+
 @media  (max-width:1000px) {
   .selectup {
     border: none;

@@ -122,40 +122,8 @@ const Trainseat = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Third row start */}
-              
-              <div className="col-md-3" style={{}}>
-   
-              <div className="row">
-      {/* First Column */}
-      
-      <div className="col-md-4">
-        <button className="btn btn-primary">Button 1</button>
-      </div>
-
-      {/* Second Column */}
-      <div className="col-md-4">
-        <button className="btn btn-primary">Button 2</button>
-      </div>
-
-      {/* Third Column */}
-      <div className="col-md-4">
-        <button className="btn btn-primary">Button 3</button>
-      </div>
-    </div>
-          
             </div>
-        
-        
-        
-          
-        
-    </div>
-    </div>
-
-
-         
+          </div>
         </Card>
       </div>
     </>

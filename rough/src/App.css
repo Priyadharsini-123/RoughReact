@@ -1,97 +1,201 @@
-.selectdown{
-  border: none;
-  border-bottom: 2px solid #0077b2;
-  box-sizing: border-box;
-  width: 40%;
-}
-.selectdown-age{
-  border: none;
-  border-bottom: 2px solid #0077b2;
-  box-sizing: border-box;
-  width: 40%;
-}
-.selectup{
-  border: none;
-  border-bottom: 2px solid #0077b2;
-  box-sizing: border-box;
-  width: 200px
-}
-.underline-text-input {
-    position: relative;
-  }
-  
-.underline-text-input-field {
-  border: none;
-  border-bottom: 2px solid #0077b2; /* Change the color as needed */
-  outline: none;
-  width: 80%;
-  padding: 5px; /* Adjust padding as needed */
-  margin-bottom: 10px; /* Adjust margin as needed */
-}
-
-/* Optional: Style placeholder */
-.underline-text-input-field::placeholder {
-  color:#0077b2 ; /* Change the color as needed */
-}
-.cancel-icon {
-  position: absolute;
-  top: 50%;
-  right: 31px;
-  transform: translateY(-50%);
+ .From {
+  width: 240px;
+  border-radius: 8px;
+  height: 72px;
+  background: #fff;
   cursor: pointer;
-  color: black; 
+  position: relative;
+  padding: 16px 18px 15px;
+  border: 2px solid #e1e7ee;
 }
 
-.cancel-icon:hover {
-  color: #000; 
-}
-.Age{
-  margin-Bottom: 20px;
-                  padding-Left: 10px;
-                  padding-Right: 15px;
-}
-
-
-/* Add this CSS after your existing styles */
-
-/* For screens up to 768px wide */
-@media (max-width: 768px) {
-  .selectup,
-  .selectdown {
-    width: 100%; /* Set width to 100% for responsiveness */
-    max-width: none; /* Remove the maximum width */
-  }
+.FromLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+  position: absolute;
+  padding: 0 4px;
+  left: 14px;
+  top: -10px;
+  background-color: #fff;
+ 
 }
 
-/* For screens between 768px and 1000px wide */
-@media (min-width: 769px) and (max-width: 1000px) {
-  .selectup,
-  .selectdown {
-    width: 50%; /* Adjust width as needed */
-    max-width: none; /* Remove the maximum width */
-  }
+.Source {
+  color: #c2c2c2;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #c2c2c2;
+  white-space: nowrap;
+  overflow: hidden;
+  
 }
-
-@media (max-width: 1000px) {
-  .selectup {
-    border: none;
-    border-bottom: 2px solid #0077B2;
-    box-sizing: border-box;
-    width: 100%; /* Set width to 100% */
-   
-  }
-  .selectdown {
-    border: none;
-    border-bottom: 2px solid #0077B2;
-    box-sizing: border-box;
-    width:100%; 
+.to{
+  width: 240px;
+  height: 72px;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  padding: 16px 18px 15px;
+  border: 2px solid #e1e7ee;
+  border-radius: 8px;
+}
+.Seatfrom{
     
-    /* Set width to 100% */
-    
-  }
-  .Age{
-    margin-Bottom: 20px;
-                    padding-Left: 10px;
-                    padding-Right: 36px;
-  }
+  font-size: 14px;
+  display: inline-flex;
+  font-weight: 500;
+  color: #777;
+  position: absolute;
+  padding: 0 4px;
+  left: 14px;
+  top: -10px;
+  background-color: #fff
 }
+.destination{
+  display: flex;
+  align-items: center;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 600;
+  color: #c2c2c2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Seatcard-inner-left {
+  border: 2px solid #f60d0d;
+  border-radius: 8px;
+  height: 72px;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  padding: 16px 18px 15px
+}
+.DownArrow {
+  border: solid #2276e3;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg)
+}
+.fswDownArrow {
+  position: absolute;
+  right: 12px;
+  top: 21px
+}
+
+
+/* .container {
+  position: relative;
+  margin-right: 12px;
+}
+
+.container .arrow-icon {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .103);
+  border-radius: 12px;
+  background-color: #fff;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: -24px;
+  top: 18px;
+  z-index: 1;
+  padding: 8px;
+}
+
+.container .arrow-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.container .content {
+  width: 260px;
+  border-radius: 8px;
+  height: 72px;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  padding: 16px 18px 15px;
+  border: 2px solid #e1e7ee;
+} */
+.First div {
+  display: inline;
+
+}
+.tatkalhead {
+  flex: 1 1
+}
+
+
+.tatkalhead-in {
+  display: flex;
+  align-items: center;
+  background-color: #fff
+}
+
+.tatkalopen {
+  padding: 0 0 12px;
+  background-color: #f2f2f2;
+  outline: none;
+  position: relative;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 1;
+  align-items: center;
+  cursor: pointer
+}
+
+.tatkalopen-in {
+  display: inline;
+  padding: 2px 12px;
+  background-color: #18a160;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: -8px;
+  font-family: Rubik
+}
+
+.tatkalopen:not(:last-child) {
+  margin-right: 2px
+}
+
+.tatkalopen:first-child {
+  border-radius: 8px 0 0 8px
+}
+
+.tatkalopen:last-child {
+  border-radius: 0 8px 8px 0
+}
+.Day-in {
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border: 2px solid #c2c2c2;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 10px;
+  position: relative
+}
+.day{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #777;
+  font-family: Rubik
+}
+

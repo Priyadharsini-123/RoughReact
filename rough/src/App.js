@@ -15,11 +15,11 @@ const App = () => {
   return (
     <>
     
-    {/* <Trainseat/> */}
-          <Fare/>   
+     <Trainseat/> 
+          {/* <Fare/>    */}
     {/* <FareDetails/>  */}
      {/* <Faq/> */}
-       {/* <Seat/>   */}
+        {/* <Seat/>    */}
      
     </>
   )
