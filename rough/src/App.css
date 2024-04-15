@@ -1,5 +1,5 @@
  .From {
-  width: 240px;
+  width: 258px;
   border-radius: 8px;
   height: 72px;
   background: #fff;
@@ -28,13 +28,13 @@
   align-items: center;
   font-size: 16px;
   font-weight: 600;
-  color: #c2c2c2;
+  
   white-space: nowrap;
   overflow: hidden;
   
 }
 .to{
-  width: 240px;
+  width: 258px;
   height: 72px;
   background: #fff;
   cursor: pointer;
@@ -67,7 +67,7 @@
   text-overflow: ellipsis;
 }
 .Seatcard-inner-left {
-  border: 2px solid #f60d0d;
+  border: 2px solid #e1e7ee;
   border-radius: 8px;
   height: 72px;
   background: #fff;
@@ -132,7 +132,8 @@
 
 }
 .tatkalhead {
-  flex: 1 1
+  flex: 1 1;
+  display: flex;
 }
 
 
@@ -197,5 +198,31 @@
   line-height: 16px;
   color: #777;
   font-family: Rubik
+}
+.Seatbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -19px
+}
+
+.Seatsearch {
+  background: #0077B2;
+  font-family: Rubik;
+  font-weight: 600
+}
+
+.Seatsearch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  font-size: 22px;
+  line-height: 28px;
+  color: #fff;
+  padding: 16px 45px;
+  outline: 0;
+  border: 0;
+  cursor: pointer
 }
 
