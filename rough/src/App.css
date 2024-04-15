@@ -51,6 +51,27 @@
                   padding-Right: 15px;
 }
 
+
+/* Add this CSS after your existing styles */
+
+/* For screens up to 768px wide */
+@media (max-width: 768px) {
+  .selectup,
+  .selectdown {
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: none; /* Remove the maximum width */
+  }
+}
+
+/* For screens between 768px and 1000px wide */
+@media (min-width: 769px) and (max-width: 1000px) {
+  .selectup,
+  .selectdown {
+    width: 50%; /* Adjust width as needed */
+    max-width: none; /* Remove the maximum width */
+  }
+}
+
 @media (max-width: 1000px) {
   .selectup {
     border: none;
