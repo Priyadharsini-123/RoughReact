@@ -8,14 +8,18 @@ import Choose from './pages/Choose'
 import Faq from './pages/Faq';
 import FareDetails from './pages/FareDetails';
 import Seat from './SeatAvaliblity';
+import Trainseat from './pages/Trainseat';
+
 
 const App = () => {
   return (
     <>
-    <Seat/>
-      {/* <Fare/>
-    <FareDetails/> */}
+    
+    {/* <Trainseat/> */}
+          <Fare/>   
+    {/* <FareDetails/>  */}
      {/* <Faq/> */}
+       {/* <Seat/>   */}
      
     </>
   )

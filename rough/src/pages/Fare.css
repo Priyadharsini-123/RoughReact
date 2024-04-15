@@ -1,74 +1,31 @@
-table,th,td,tr,thead,ul,li,a,label,select,button,h1,h2,h3,p{
-    font-family: Poppins, sans-serif !important;
-  }
-   
-  .fare{
-   
-    width:600px;
-    height: 400px;
-    margin:0 auto;
-    
-  }
-  .farehead{
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  }
-  .underline-text-input {
-    position: relative;
-  }
-  
-  .underline-text-input-field {
+.selectdown{
+  border: none;
+  border-bottom: 2px solid #0077b2;
+  box-sizing: border-box;
+  width: 50%;
+}
+.selectup{
+  border: none;
+  border-bottom: 2px solid #0077b2;
+  box-sizing: border-box;
+  width: 200px
+}
+
+marginBottom: "20px",
+                  paddingLeft: "10px",
+                  paddingRight: "15px",
+@media  (max-width:1000px) {
+  .selectup {
     border: none;
-    border-bottom: 2px solid #0077b2; /* Change the color as needed */
-    outline: none;
-    width: 80%;
-    padding: 5px; /* Adjust padding as needed */
-    margin-bottom: 10px; /* Adjust margin as needed */
-  }
-  
-  /* Optional: Style placeholder */
-  .underline-text-input-field::placeholder {
-    color:#0077b2 ; /* Change the color as needed */
-  }
-  .cancel-icon {
-    position: absolute;
-    top: 50%;
-    right: 31px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: black; 
-  }
-  
-  .cancel-icon:hover {
-    color: #000; 
-  }
-  
-  
-  
-  select{
-    width: 90%;
-    
-    
+    border-bottom: 2px solid #0077B2;
     box-sizing: border-box;
+    width: 100%;
+  }
+  .selectdown {
     border: none;
-    border-bottom: 2px solid #0077b2;
-  }
-  /* .table{
-    padding-top: 40px;
-    max-Width: "600px";
-    width: "100%";
-    box-Shadow: "0 4px 8px 0 rgba(0,0,0,0.2)";
-    border-Radius: "5px";
-  } */
-  .button{
-    background-color: #0077b2;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    margin-top:30px ;
-    color: #fff;
-    border-radius: 2px;
-    margin-bottom:10px ;
-  
-  }
+    border-bottom: 2px solid #0077B2;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+}

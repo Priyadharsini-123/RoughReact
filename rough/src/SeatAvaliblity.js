@@ -8,18 +8,7 @@ const SeatAvaliblity = () => {
   return (
     <>
 
-<div
-      style={{
-        width: '58px',
-        height: '58px',
-        backgroundColor: '#fff',
-        borderRadius: '50%',
-        margin: '24px 0 19px',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    ></div> 
+
           
         
         
@@ -86,7 +75,7 @@ const SeatAvaliblity = () => {
           
             
             <div className="d-flex align-items-center m-4">
-              <div style={{marginRight: '12px',
+    <div style={{marginRight: '12px',
       position: 'relative'}}>
                 <div  style={{ width: '260px',borderRadius: '8px',
       height: '72px',
@@ -114,7 +103,7 @@ const SeatAvaliblity = () => {
       textOverflow: 'ellipsis' }}>Enter Source Name</p>
                   
                 </div>
-                <span style={{boxShadow: '0 0 10px rgba(0,0,0,.103)',
+      <span style={{boxShadow: '0 0 10px rgba(0,0,0,.103)',
         borderRadius: '12px',
         backgroundColor: '#fff',
         width: '38px',
@@ -146,38 +135,46 @@ const SeatAvaliblity = () => {
                 </div>
               </div>
               <div className="Seatcard-inner-in">
-                <div className="Seatcard-inner-left" style={{ width: '142px' }}>
+                <div className="Seatcard-inner-left" style={{ width: '80px' }}>
                   <span className="DownArrow fswDownArrow"></span>
                   <p className="Seatfrom">Departure</p>
                   <p className="Seatchioce" style={{ color: '#141823' }}>09 Apr'24</p>
                  
                 </div>
               </div>
-              {/* <div className="Seatcard-inner-in styles_FswFieldItemIsFullWidth__KgdCI">
-                <div className="styles_rdDySlct__dEHlH">
-                  <button className="styles_rdDySlct__optn__0Ur06 ">
-                    <span className="styles_rdDySlct__tatklTag__e2tv2">Tatkal open</span>
+              <div className="Seatcard-inner-in">
+                <div className="Seatcard-inner-left" style={{ width: '80px' }}>
+                  <span className="DownArrow fswDownArrow"></span>
+                  <p className="Seatfrom">Departure</p>
+                  <p className="Seatchioce" style={{ color: '#141823' }}>09 Apr'24</p>
+                 
+                </div>
+              </div>
+              <div className="Seatcard-inner-in tatkalhead">
+                <div className="tatkalhead-in">
+                  <button className="tatkalopen">
+                    <span className="tatkalopen-in">Tatkal open</span>
                     <div className="makeFlex hrtlCenter appendTop8">
-                      <span className="styles_rdDySlct__optnRdio__xvPK1 "></span>
-                      <span className="styles_rdDySlct__optnLbl__j38Yv ">Today</span>
+                      <span className="Day-in"></span>
+                      <span className="day">Today</span>
                     </div>
                   </button>
-                  <button className="styles_rdDySlct__optn__0Ur06 ">
-                    <span className="styles_rdDySlct__tatklTag__e2tv2">Tatkal open</span>
+                  <button className="tatkalopen">
+                    <span className="tatkalopen-in">Tatkal open</span>
                     <div className="makeFlex hrtlCenter appendTop8">
-                      <span className="styles_rdDySlct__optnRdio__xvPK1 "></span>
-                      <span className="styles_rdDySlct__optnLbl__j38Yv ">Tomorrow</span>
+                      <span className="Day-in"></span>
+                      <span className="day">Today</span>
                     </div>
                   </button>
-                  <button className="styles_rdDySlct__optn__0Ur06 ">
-                    <span className="styles_rdDySlct__tatklTag__e2tv2">Tatkal open</span>
+                  <button className="tatkalopen">
+                    <span className="tatkalopen-in">Tatkal open</span>
                     <div className="makeFlex hrtlCenter appendTop8">
-                      <span className="styles_rdDySlct__optnRdio__xvPK1 "></span>
-                      <span className="styles_rdDySlct__optnLbl__j38Yv ">Day After Tomorrow</span>
+                      <span className="Day-in"></span>
+                      <span className="day">Today</span>
                     </div>
                   </button>
                 </div>
-              </div> */}
+              </div>
             </div>
              <div className="Seatbutton">
               <span className="Seatsearch" style={{ marginTop: '60px' }}>SEARCH SEATS</span>
