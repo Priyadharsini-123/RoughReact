@@ -210,7 +210,7 @@ const Trainseat = () => {
   } else {
     content = (
       
-      <div className="desktop-content">
+      <div className="desktop-content ">
         <div className="desktoptrainseat">
        <div className="desktop-trainseat-tab">
          <ul className="desktop-trainseat-list">

@@ -11,15 +11,15 @@ const Wheelsseat = () => {
         <Card
           className=""
           style={{
-            margin: "12px",
+            margin: "106px",
             width: "80vw",
             boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
             borderRadius: "5px",
           }}
         >
-          <div className="container ">
-            <div className="row ">
-              <div className="col-sm  m-3 bg " style={{ position: "relative" }}>
+          <div className="container">
+            <div className="row align-items-center">
+               <div className="col-sm-3 m-3 bg" style={{ position: "relative" }}>
                 <input
                   id="From"
                   placeholder="Enter From Station"
@@ -30,51 +30,39 @@ const Wheelsseat = () => {
                   alt="Frame icon"
                   loading="lazy"
                   className="From"
-                  
                   decoding="async"
                   data-nimg="1"
                   src={Fromstation}
                 />
-             <div>
-             <img
-                 
-                 className="swap-image "
+              </div> 
+              <div className="col-sm-1 d-flex justify-content-center align-items-center no-gutters">
+                <img
                   alt="swap"
                   loading="lazy"
-                  width="40"
-                  height="42"
+                  width="30"
+                  height="30"
                   decoding="async"
                   data-nimg="1"
-                 
+                  className="cursor-pointer"
                   src={Swap}
-                  style={{ color: "transparent", maxWidth: "100%", height: "auto" }}
-                /> 
-             </div>
-                
-                <div  className="" style={{ position: "relative", display: "inline-block" }}>
-                  <input
-                    id="To"
-                    placeholder="Enter To Station"
-                    type="text"
-                    className="tostation"
-                  />
-                  <img
-                    alt="Frame icon"
-                    loading="lazy"
-                    style={{
-                      position: "absolute",
-                      left: "0.2em",
-                      top: "50%",
-                      transform: "translateY(-50%)",
-                      width: "30px",
-                      height: "24px",
-                      maxWidth: "100%",
-                      height: "auto",
-                    }}
-                    
-                    src={Tostation}
-                  />
-                </div>
+                  style={{ color: "transparent" }}
+                />
+              </div> 
+              <div className="col-sm-3 m-3 bg" style={{ position: "relative" }}>
+                <input
+                  id="To"
+                  placeholder="Enter To Station"
+                  type="text"
+                  className="tostation"
+                />
+                <img
+                  alt="Frame icon"
+                  loading="lazy"
+                  className="To"
+                  decoding="async"
+                  data-nimg="1"
+                  src={Tostation}
+                />
               </div>
             </div>
           </div>
