@@ -1,12 +1,12 @@
 import React from "react";
 import Fromstation from "../assets/images/From_train.svg";
 import Swap from "../assets/images/Swap.svg";
-import Tostation from "../assets/images/To_train.svg"
-import Date from "../assets/images/Date.svg"
+import Tostation from "../assets/images/To_train.svg";
+import DateIcon from "../assets/images/Date.svg";
 const DeskSeat = () => {
   return (
     <div className="desktoptrainseat">
-       <div className="desktop-trainseat-tab">
+      {/* <div className="desktop-trainseat-tab">
           <ul className="desktop-trainseat-list">
           <li className="desktop-traintab-list">
             <svg
@@ -95,168 +95,159 @@ const DeskSeat = () => {
             </svg>{" "}
             Fare Calculator
           </li>
-        </ul>  
-         <div class="container seatbook">
-         <div class="row">
-    
-    <div class="col-6">
-    <div
-            style={{
-              fontSize: "23px",
-              fontWeight: 400,
-              padding: "1.44vw 1.9vw 0 1.9vw",
-              fontFamily: "Poppins, sans-serif !important",
-              color: "black",
-              
-            }}
-          >
-            {" "}
-           Check Seat Avaliblity
+        </ul>   */}
+      <div class="container ">
+        <div class="row">
+          <div class="col-sm-3">
+            <div
+              style={{
+                fontSize: "23px",
+                fontWeight: 400,
+                padding: "1.44vw 1.9vw 0 1.9vw",
+                fontFamily: "Poppins, sans-serif !important",
+                color: "black",
+                textWrap: "nowrap",
+              }}
+            >
+              {" "}
+              Check Seat Avaliblity
+            </div>
           </div>
-    </div>
-          
-           <div className="m-3 d-flex">
-  <div style={{ position: "relative" }}>
-    <input
-     
-      id="From"
-      placeholder="Enter From Station"
-      type="text"
-      
-      style={{
-        width: "16vw",
-        height: "4vw",
-        paddingLeft: "2.5em",
-        border:' 1px solid #D8D8D8',
-     borderRadius:'4px'
-      }}
-     
-    />
-     <div className="frombottom"></div>
-    <img
-      alt="Frame icon"
-      loading="lazy"
-      style={{
-        width: "30px",
-        height: "24px",
-        position: "absolute",
-        left: "0.5em",
-        top: "50%",
-        transform: "translateY(-50%)",
-      }}
-      decoding="async"
-      data-nimg="1"
-      src={Fromstation}
-    />
-   
-  </div>
-  <div style={{margin:'10px',position:'relative'}}>
-  <img alt="swap" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" class="cursor-pointer" src={Swap} style={{color: 'transparent'}}/>
-  </div>
-  <div style={{ position: "relative", display: "inline-block" }}>
-  <input
-    
-    id="From"
-    placeholder="Enter To Station"
-    type="text"
-    
-    style={{
-      width: "16vw",
-      height: "4vw",
-      paddingLeft: "2.5em",
-     border:' 1px solid #D8D8D8',
-     borderRadius:'4px'
-    }}
-  />
-  <img
-    alt="Frame icon"
-    loading="lazy"
-    style={{
-      position: "absolute",
-      left: "0.5em",
-      top: "50%",
-      transform: "translateY(-50%)",
-      width: "30px",
-      height: "24px",
-    }}
-    decoding="async"
-    data-nimg="1"
-    src={Tostation}
-  />
-</div>
-<div >
+          <div className="row">
+            <div className="col-md-6 m-3 d-flex flex-wrap">
+              <div style={{ position: "relative" }}>
+                <input
+                  id="From"
+                  placeholder="Enter From Station"
+                  type="text"
+                  className="station"
+                />
 
-<div style={{ position: "relative", marginLeft: "20px" }}>
-
-    <input
-      
-      id="Date"
-      placeholder="mm/dd/yyyy"
-      type="text"
-      
-      
-      style={{
-        width: "12vw",
-        height: "4vw",
-        paddingLeft: "2.5em",
-        border:' 1px solid #D8D8D8',
-     borderRadius:'4px'
-        
-      }}
-    />
-    <label htmlFor="" className="labelin">Date</label>
-    <img
-      alt="Frame icon"
-      loading="lazy"
-      style={{
-        width: "30px",
-        height: "24px",
-        position: "absolute",
-        left: "0.5em",
-        top: "50%",
-        transform: "translateY(-50%)",
-      }}
-      decoding="async"
-      data-nimg="1"
-      src={Fromstation}
-    />
-    
-  </div>
- 
-</div>
-<div style={{width: '3.5vw',
-  height: '3.6vw',
-  borderRadius: '4px',
-  border: '1px solid rgb(216, 216, 216)',
-  fontWeight: 600,
-  fontSize: '12px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  color: 'rgb(150, 150, 150)',
-  cursor: 'pointer',
-  marginLeft:'10px'}} >20 Apr</div>
-
- <div style={{width: '3.5vw',
-  height: '3.6vw',
-  borderRadius: '4px',
-  border: '1px solid rgb(216, 216, 216)',
-  fontWeight: 600,
-  fontSize: '12px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  color: 'rgb(150, 150, 150)',
-  cursor: 'pointer',
-  marginLeft:'10px'}} >21 Apr</div>
-
-<div><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-13t6lrm" tabindex="0" type="button" data-id="btn_search_trains">SEARCH<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div>
-</div> 
-
-
-       
-        </div> 
-      </div> 
+                <img
+                  alt="From icon"
+                  loading="lazy"
+                  className="From"
+                  
+                  src={Fromstation}
+                />
+              </div>
+              <div className="col-md-1 m-1" style={{ position: "relative" }}>
+                <img
+                  alt="swap"
+                  loading="lazy"
+                  width="40"
+                  height="40"
+                  className="swap-image"
+                
+                  src={Swap}
+                  style={{ color: "transparent" }}
+                />
+              </div>
+              <div style={{ position: "relative", width: "calc(100% - 21vw)" }}>
+                {" "}
+                <input
+                  id="To"
+                  placeholder="Enter To Station"
+                  type="text"
+                  style={{
+                    width: "100%",
+                    height: "4vw",
+                    paddingLeft: "2.5em",
+                    border: "1px solid #D8D8D8",
+                    borderRadius: "4px",
+                  }}
+                />
+                <img
+                  alt="To icon"
+                  loading="lazy"
+                 className=""
+                  
+                  src={Tostation}
+                />
+              </div>
+            </div>
+          </div>
+           <div className="col-sm-3"></div> 
+           <div style={{ position: "relative", marginLeft: "20px" }}>
+              <input
+                id="Date"
+                placeholder="mm/dd/yyyy"
+                type="text"
+                style={{
+                  width: "12vw",
+                  height: "4vw",
+                  paddingLeft: "2.5em",
+                  border: "1px solid #D8D8D8",
+                  borderRadius: "4px",
+                }}
+              />
+              <label htmlFor="" className="labelin">
+                Date
+              </label>
+              <img
+                alt="Date icon"
+                loading="lazy"
+                style={{
+                  width: "30px",
+                  height: "24px",
+                  position: "absolute",
+                  left: "0.5em",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                }}
+                decoding="async"
+                data-nimg="1"
+                src={DateIcon}
+              />
+            </div>
+           <div
+              style={{
+                width: "3.5vw",
+                height: "3.6vw",
+                borderRadius: "4px",
+                border: "1px solid rgb(216, 216, 216)",
+                fontWeight: 600,
+                fontSize: "12px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "rgb(150, 150, 150)",
+                cursor: "pointer",
+                marginLeft: "10px",
+              }}
+            >
+              20 Apr
+            </div>
+            <div
+              style={{
+                width: "3.5vw",
+                height: "3.6vw",
+                borderRadius: "4px",
+                border: "1px solid rgb(216, 216, 216)",
+                fontWeight: 600,
+                fontSize: "12px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "rgb(150, 150, 150)",
+                cursor: "pointer",
+                marginLeft: "10px",
+              }}
+            >
+              21 Apr
+            </div>
+            <div>
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-13t6lrm"
+                tabindex="0"
+                type="button"
+                data-id="btn_search_trains"
+              >
+                SEARCH
+                <span class="MuiTouchRipple-root css-w0pj6f"></span>
+              </button> 
+        </div>
+      </div>
     </div>
     </div>
   );
