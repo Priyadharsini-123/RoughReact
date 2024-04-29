@@ -17,7 +17,7 @@
 }
 .accordion-body {
     color: black;
-    font-size: 18px;
+    font-size: 17px;
 }
 .accordion-title-text {
     font-family: Poppins, sans-serif !important;
@@ -36,11 +36,9 @@
 }
 .accordion-body {
   
-        max-height: 190px; /* Adjust this value as needed */
-        overflow-y: auto;
+        max-height: 199px; 
+        overflow-wrap: break-word;
        
-      
-   
   }
   
   .accordion-body p,
