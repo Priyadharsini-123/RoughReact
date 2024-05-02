@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Button, Col, Container, Row, Table } from "react-bootstrap";
-import WebsiteNavbar from "../pages/WebsiteNavbar";
-
-
+import WebsiteNavbar from "../../../components/WebsiteNavbar";
+import Footer from "../Footer";
+import LiveTrainQA from "../LiveTrain/LiveTrainQA";
 import mixpanel from "mixpanel-browser";
 import { toast } from "react-toastify";
 import axios from "axios";
-
+import { useGetTrainDataQuery } from "../../../redux/features/api/CoachPositionApi";
 import Select from 'react-select';
-// import track from "../../../assets/images/livetraingif.gif"
-
-import LiveQA from "./Liveqa";
+import track from "../../../assets/images/livetraingif.gif"
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 
 
 const LiveTrain = () => {
@@ -20,7 +19,8 @@ const LiveTrain = () => {
   const [data, setData] = useState('');
   const [loading, setLoading] = useState(false);
   // const [options, setOptions] = useState([]);
-  
+  const { data: TrainData } = useGetTrainDataQuery(liveTrainList); 
+
 
 //   useEffect(() => {
 //     if (TrainData && TrainData.data) {
@@ -88,28 +88,32 @@ const LiveTrain = () => {
       <Container fluid>
       <Row className="mt-5 form-backgroundss">
       <Row className="justify-content-center align-items-center text-center p-5 ">
-     
+      <AnimatedOnScroll               
+                 animationIn="bounceInLeft">
         <h3 style={{
           color: "white",
           fontWeight: "bold",
           fontSize: "clamp(24px, 5vw, 45px)",
           textAlign: "center", 
-        }}>Live Train Running Status</h3> 
+        }}>Live Train Running Status</h3> </AnimatedOnScroll>
       </Row>
         <form>
-                     
-                
+        <AnimatedOnScroll               
+                 animationIn="bounceInRight">
             <Row className="p-3 d-flex flex-lg-row flex-column flex-xxl-row flex-xl-row flex-sm-column flex-md-row justify-content-center align-items-center text-center">
               <Col className="my-4 mx-2" md={6} lg={4} xl={4} xxl={3}>
               <Select
   styles={customStyles}
   placeholder="Enter Train Name or Number"
   onInputChange={handleInputChange}
- 
-  
+  options={(TrainData?.data || []).map((train) => ({
+    value: train.TrainNo, 
+     label: `${train.TrainNo} - ${train.TrainName}`,
+  }))}
+  value={TrainData?.data?.find((option) => option.value === liveTrain)}
   onChange={(selectedOption) => {
     console.log("Selected input data:", selectedOption.value);
-    
+    setLiveTrain(selectedOption.value);
     console.log(liveTrain);
     handleLiveTrainSearch()
     
@@ -134,7 +138,7 @@ const LiveTrain = () => {
                 </Button>
               </Col>
             </Row>
-           
+            </AnimatedOnScroll>
         
           </form>
         </Row>
@@ -169,7 +173,7 @@ const LiveTrain = () => {
                 {index === lastIndex ? (
                   <div className="imagecontainer">
                     <img
-                      
+                      src={track}
                       alt="TrainsOnWheels LiveTrack"
                       title="TrainsOnWheels LiveTrack"
                       style={{ width: "60px", height: "60px" }}
@@ -220,10 +224,9 @@ const LiveTrain = () => {
           
         )}
       
-     
+        <LiveTrainQA/>
      
         </Col>
-        
         <Col md={6} lg={6}> </Col>
         <Row className="justify-content-start align-items-start ">
   <Col xs={10} sm={10} md={10} lg={8} xl={8} className="mx-3 mb-5">
@@ -232,9 +235,8 @@ const LiveTrain = () => {
     </div>
   </Col>
 </Row>
-
       </Container>
-     
+      <Footer/>
     </div>
   );
 };

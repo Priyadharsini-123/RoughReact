@@ -1,8 +1,44 @@
 import React, { useState } from "react";
+import styled from "styled-components"; // Import styled-components
 import downArrow from "../assets/images/faqarrowdown.png";
 import upArrow from "../assets/images/faquparrow.png";
 
-const Faqnew = () => {
+const AccordionItem = styled.div`
+  .accordion-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .faq-title {
+    font-size: 22px;
+    font-family: Poppins, sans-serif !important;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .arrow {
+    width: 20px;
+    height: auto;
+  }
+
+  .accordion-body {
+    color: black;
+    font-size: 16px;
+    max-height: 199px; 
+    
+  }
+
+  .accordion-title-text {
+    font-family: Poppins, sans-serif !important;
+    font-size: 18px;
+    color: #0077b2;
+  }
+`;
+
+
+const LiveQA = () => {
   const accordionData = [
     {
       id: 0,
@@ -56,50 +92,26 @@ const Faqnew = () => {
         <div>
           <p>
             Trains on Wheels offers an easy way for passengers to check the live
-            status of Indian Railways trains online.{" "}
+            status<br></br> 
             <strong>Here are the steps:</strong>
-          </p>
-
-          <ul>
+            <ul>
             <li>Download the Trains on Wheels app</li>
             <li>
               Open and tap on Running Status and enter IRCTC Train Number/Train
               Name
             </li>
             <li>
-              Click on Search for your IRCTC Train Status & You will now see
+              Click on Search and You will now see
               your train's live location
             </li>
           </ul>
+          </p>
+
+         
         </div>
       ),
     },
-    {
-      id: 5,
-      title: "Things to Know Before Checking Train Running Status Online",
-      body: (
-        <div>
-        
-
-          <p>
-          
-            <strong>Date of Journey (DOJ):</strong> Found on the ticket or in the booking confirmation message. This is the date passengers should board the train
-          </p>
-
-          <p>
-            <strong>Train Number&Name:</strong> Each train has a unique
-            five-digit number assigned to it.
-          </p>
-
-          <p>
-            <strong>Source & Destination Station Names:</strong> Passengers
-            should know the source & destination station names. The source
-            station is where the journey begins, & destination station is
-            the final stop.
-          </p>
-        </div>
-      ),
-    },
+  
 
     {
       id: 6,
@@ -128,14 +140,15 @@ const Faqnew = () => {
             <h1 className="faq-title">FAQ</h1>
             <div className="Accordion">
               {accordionData.map(({ id, title, body }) => (
-                <Accordion
-                  key={id}
-                  id={id}
-                  title={title}
-                  body={body}
-                  isActive={activeId === id}
-                  onClick={() => handleAccordionClick(id)}
-                />
+                <AccordionItem key={id}>
+                  <Accordion
+                    id={id}
+                    title={title}
+                    body={body}
+                    isActive={activeId === id}
+                    onClick={() => handleAccordionClick(id)}
+                  />
+                </AccordionItem>
               ))}
             </div>
           </div>
@@ -169,4 +182,4 @@ const Accordion = ({ id, title, body, isActive, onClick }) => {
   );
 };
 
-export default Faqnew;
+export default LiveQA;

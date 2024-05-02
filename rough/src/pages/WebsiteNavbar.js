@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav, NavDropdown, Navbar } from 'react-bootstrap';
-import { useLocation } from 'react-router-dom'; 
+
 import logo from "../assets/images/logo5.webp";
 import mixpanel from "mixpanel-browser";
 

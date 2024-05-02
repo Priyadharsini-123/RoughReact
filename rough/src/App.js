@@ -28,7 +28,10 @@ import Seatfaq from './pages/Farecomparefaq';
 import TrainFooter from '../src/pages/TrainFooter';
 import Feet from './pages/Feet';
 import FooterRough from './pages/FooterRough';
-import Faqnew from './pages/Faqnew';
+
+import Ad from './pages/Ad';
+import About from './pages/About';
+import Adver from './pages/Adver';
 
 
 
@@ -37,10 +40,13 @@ import Faqnew from './pages/Faqnew';
 const App = () => {
   return (
     <>
+    <Adver/>
     {/* <TrainFooter/> */}
     {/* <Feet/> */}
     {/* <FooterRough/> */}
-   <Faqnew/>
+   {/* <Faqnew/> */}
+  {/* <Ad/> */}
+  {/* <About/> */}
     {/* <WebsiteNavbar/> */}
     {/* <Navigation/> */}
     {/* <Seatfaq/> */}

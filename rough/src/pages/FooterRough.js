@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Instagram from "../assets/images/ins.svg";
-import Twitter from "../assets/images/tw.svg";
+import Twitter from "../assets/images/twitter.png";
 import Linkdin from "../assets/images/ln.svg";
 import youTube from "../assets/images/youtube.svg";
 import Facebook from "../assets/images/fb.svg";
