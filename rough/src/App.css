@@ -1,57 +1,97 @@
-.article-1{
+.agents {
     background-color: #e6eaee;
-    border-radius: 10px;
-    padding: 80px 0;
-}
-.Advertisment{
-    background-image:  url(//v.fastcdn.co/t/737ee8f3/bc1e39d5/1702311316-49325925-ghost-Header2.jpg);
-
-    background-position: 50%;
-    background-size: cover;
-    height: 500px;
-    padding: 20px 20px 100px;
-}
-.adcont{
-    font-family: "Poppins", sans-serif;
-      font-size: clamp(18px, 5vw, 20px);
-      color: #fff; /* Changed color to white */
-      text-align: start;
-      margin-left: 20vw;
-    }
-    .download {
-        margin-top: 30px; /* Adjust the space between the h1 and the button */
-        padding: 10px 20px; /* Adjust padding as needed */
-        background-color: #0077b2; /* Button background color */
-        color: white; /* Button text color */
-        border: none; /* Remove button border */
-        cursor: pointer;
-        margin-right: 450px;
-      }
-      
-.ad-1{
-    background-color: #e6eaee;
-    
     margin: 50px;
     border-radius: 10px;
-    
+    max-width: 100%;
+    height: auto;
 }
-    
-@media (max-width:1000px){
+
+
+.download {
+    padding: 10px 20px;
+    background-color: #0077b2;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.image-grids {
+    height: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+    background-position: center;
+    background-size: contain;
+}
+
+h2.agenthead {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 32px;
+    font-family: "Poppins, sans-serif" !important;
+    color: rgb(0, 119, 178);
+}
+
+p.agentpara {
+
+    font-family: "Poppins, sans-serif" !important;
+    font-size: 20px !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 9px;
+    text-align: center !important;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 550px;
+
+}
+
+h4.appinhead {
+    font-size: 20px;
+    padding-top: 32px;
+    text-align: center;
+    color: rgb(0, 119, 178);
+}
+
+p.appindes {
+
+    font-family: "Poppins, sans-serif" !important;
+    font-size: 20px !important;
+    line-height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 9px;
+    text-align: center !important;
+
+}
+
+@media (max-width:1000px) {
     .download {
-        margin-top: 30px; /* Adjust the space between the h1 and the button */
-        padding: 10px 20px; /* Adjust padding as needed */
-        background-color: #0077b2; /* Button background color */
-        color: white; /* Button text color */
-        border: none; /* Remove button border */
+        margin-top: 30px;
+        padding: 10px 20px;
+        background-color: #0077b2;
+        color: white;
+        border: none;
         cursor: pointer;
         text-wrap: nowrap;
-        margin-left: 70px;
-      }
-      .Advertisment{
+
+    }
+
+    .Advertisment {
         background: repeat 76% 54% / cover;
         background-image: url(//v.fastcdn.co/t/737ee8f3/bc1e39d5/1702311316-49325925-ghost-Header2.jpg);
         height: 24.0625rem;
         margin-top: 50px;
     }
+
+    .agents {
+        background-color: #e6eaee;
+        margin: 10px;
+        border-radius: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+
 }
-    

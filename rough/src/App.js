@@ -41,6 +41,7 @@ const App = () => {
   return (
     <>
     <Adver/>
+  
     {/* <TrainFooter/> */}
     {/* <Feet/> */}
     {/* <FooterRough/> */}
