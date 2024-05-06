@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+
+import React,{useState} from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import Appdownload from "../assets/images/download.png"
-import Apprating from "../assets/images/star-rating.png"
-import { AnimatedOnScroll } from "react-animated-css-onscroll";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 const HeaderAbout = () => {
-
-  const [counterOn,setCounteron]=useState(false)
+    const [counterOn,setCounteron]=useState(false)
   return (
     <>
     
@@ -65,21 +63,21 @@ const HeaderAbout = () => {
                 <div className="col-md-4 col-sm-4 col-xs-12">
                     <div className="item">
                         <div className="image-grid" style={{backgroundImage: "url(https://betxnew.s3.ap-south-1.amazonaws.com/images/1712668666805-mob3.png)"}}></div>
-                        <h4 className="usp-text"style={{fontFamily:'"Poppins", sans-serif',fontSize:"25px",fontWeight:"bold",color:"black"}}>Explore different <br />ways of travel</h4>
+                        <div className="usp-text"style={{fontFamily:'"Poppins", sans-serif',fontSize:"25px",fontWeight:"bold",color:"black"}}>Explore different <br />ways of travel</div>
                         <p className="usp-text"style={{fontFamily:'"Poppins", sans-serif',fontSize: "clamp(20px, 1vw, 10px)",color:"black"}}> In-app Countless ways to find meaningful new journeys </p>
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-4 col-xs-12">
                     <div className="item">
                         <div className="image-grid" style={{backgroundImage: "url(https://betxnew.s3.ap-south-1.amazonaws.com/images/1712570266565-book%201.png)", backgroundRepeat: "no-repeat"}}></div>
-                        <h4 className="usp-text"style={{fontFamily:'"Poppins", sans-serif',fontSize:"25px",fontWeight:"bold",color:"black"}}>All  your Option <br />in one place</h4>
+                        <div className="usp-text"style={{fontFamily:'"Poppins", sans-serif',fontSize:"25px",fontWeight:"bold",color:"black"}}>All  your Option <br />in one place</div>
                         <p className="usp-text"style={{fontFamily:'"Poppins", sans-serif',fontSize: "clamp(20px, 1vw, 10px)",color:"black"}}>Compare options and find the right price with our easy app</p>
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-4 col-xs-12">
                 <div className="item">
                         <div className="image-grid" style={{backgroundImage: "url(https://notification-traininfo.s3.amazonaws.com/images/1712390599938-customer-service%20%283%29.png)"}}></div>
-                        <h4 className="usp-text"style={{fontFamily:'"Poppins", sans-serif',fontSize:"25px",fontWeight:"bold",color:"black"}}>Our Customer<br />Support</h4>
+                        <div className="usp-text"style={{fontFamily:'"Poppins", sans-serif',fontSize:"25px",fontWeight:"bold",color:"black"}}>Our Customer<br />Support</div>
                         <p className="usp-text"style={{fontFamily:'"Poppins", sans-serif',fontSize: "clamp(20px, 1vw, 10px)",color:"black"}}>In-app  reliable customer Information service</p>
                     </div>
                 </div>
@@ -96,15 +94,12 @@ const HeaderAbout = () => {
           <Col lg={6} className="d-flex flex-column justify-content-center align-items-center text-center mb-3">
           <AnimatedOnScroll               
      animationIn="bounceInLeft">
-            <h1 className='my-2 mx-5' style={{
-              fontSize: "25px",
-              fontFamily: "Poppins, sans-serif",
-            
-              fontWeight: 'bold',
-              textAlign: 'center'
-            }}>Our Mission</h1>
-            <p className='mission  text-center'>our app is designed to provide you with everything you need to plan your journey with ease.Our goal is to make train travel hassle-free, so you can focus on enjoying the ride. 
-    Download the "Trains on Wheels" app today and let's embark on your next adventure together</p> 
+            <h2 style={{fontWeight: 'bold',
+    textAlign: 'center',
+    // color: 'rgb(0, 119, 178)',
+    fontFamily: '"Poppins", sans-serif',
+    fontSize: "clamp(21px, 5vw, 37px)"}}>Our Mission</h2>
+               <p className='mission  text-center'>Our goal is to unify railway travel services, providing users with a seamless experience to access the most competitive prices and receive intelligent, up-to-date travel information anytime, anywhere.</p> 
            
             <div class="row mb-3">
               <div class="col-md-6 mx-auto text-center mt-3">
@@ -123,13 +118,14 @@ const HeaderAbout = () => {
       {/* Mission end */}
       {/* Rating start */}
       <Container>
-      <Row className="justify-content-center mt-4">
+        
+      <Row className="justify-content-center">
         <Col xs="auto">
-          <h1  style={{fontWeight: 'bold',
+        <h2 style={{fontWeight: 'bold',
     textAlign: 'center',
+    // color: 'rgb(0, 119, 178)',
     fontFamily: '"Poppins", sans-serif',
-    fontSize: "clamp(24px, 5vw, 45px)",
-    }}>Trains on Wheels Statistics</h1>
+    fontSize: "clamp(24px, 5vw, 45px)"}}>App Statistics</h2>
         </Col>
       </Row>
       <ScrollTrigger onEnter={()=>setCounteron(true)} onExist={()=>setCounteron(false)}>
@@ -139,26 +135,45 @@ const HeaderAbout = () => {
         </Col>
       </Row>
       </ScrollTrigger>
-    
        <div className="container">
             <div className="row">
                 <div className="col-md-4 col-sm-4 col-xs-12">
                     <div className="item">
                         
-                        <h1 style={{ fontSize: '60px',
+                        <div style={{ fontSize: '60px',
     textAlign: 'center',
     paddingTop: '32px',
     fontFamily: '"Poppins", sans-serif',
-    color: 'rgb(0, 119, 178)'}}>{counterOn && <CountUp start={0} end={5000} duration ={1} delay={0.1}/>}+</h1>
-                    <p className="usp-text"style={{fontFamily:'"Poppins", sans-serif',fontSize: "clamp(20px, 1vw, 10px)",color:"black"}}>App Download</p>    
+    color: 'rgb(0, 119, 178)'}}>{counterOn && <CountUp start={0} end={5000} duration ={1} delay={0.1}/>}+</div>
+                         <p className="usp-text"style={{fontFamily:'"Poppins", sans-serif',fontSize: "clamp(20px, 1vw, 10px)",color:"black"}}>App Download</p>    
                     </div>
                 </div>
-                
-              
+                <div className="col-md-4 col-sm-4 col-xs-12">
+                    <div className="item">
+                        
+                        <div style={{ fontSize: '60px',
+    textAlign: 'center',
+    paddingTop: '32px',
+    fontFamily: '"Poppins", sans-serif',
+    color: 'rgb(0, 119, 178)'}}>{counterOn && <CountUp start={2000} end={100} duration ={1} delay={0.1}/>}+</div>
+                       <p className="usp-text"style={{fontFamily:'"Poppins", sans-serif',fontSize: "clamp(20px, 1vw, 10px)",color:"black"}}>Daily User</p>    
+                    </div>
+                </div>
+                <div className="col-md-4 col-sm-4 col-xs-12">
+                <div className="item">
+                       
+                        <div style={{ fontSize: '60px',
+    textAlign: 'center',
+    paddingTop: '32px',
+    fontFamily: '"Poppins", sans-serif',
+    color: 'rgb(0, 119, 178)'}}>{counterOn && <CountUp start={5000} end={4.2}  decimals={1} duration ={1} delay={0.2}/>}+</div>
+                        <p className="usp-text"style={{fontFamily:'"Poppins", sans-serif',fontSize: "clamp(20px, 1vw, 10px)",color:"black"}}>App Rating</p>    
+                    </div>
+                </div>
             </div>
         </div> 
     </Container>
-    
+  
       {/* Rating end */}
     </>
   );

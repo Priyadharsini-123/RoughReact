@@ -32,6 +32,8 @@ import FooterRough from './pages/FooterRough';
 import Ad from './pages/Ad';
 import About from './pages/About';
 import Adver from './pages/Adver';
+import Live from './pages/Live';
+import AboutNew from './pages/AboutNew';
 
 
 
@@ -40,14 +42,16 @@ import Adver from './pages/Adver';
 const App = () => {
   return (
     <>
-    <Adver/>
+    {/* <Adver/> */}
+    {/* <Live/> */}
   
-    {/* <TrainFooter/> */}
+    <TrainFooter/>
     {/* <Feet/> */}
     {/* <FooterRough/> */}
    {/* <Faqnew/> */}
   {/* <Ad/> */}
   {/* <About/> */}
+  {/* <AboutNew/> */}
     {/* <WebsiteNavbar/> */}
     {/* <Navigation/> */}
     {/* <Seatfaq/> */}
