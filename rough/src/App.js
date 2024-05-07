@@ -34,6 +34,7 @@ import About from './pages/About';
 import Adver from './pages/Adver';
 import Live from './pages/Live';
 import AboutNew from './pages/AboutNew';
+import Navbar from './pages/Navbar';
 
 
 
@@ -42,10 +43,11 @@ import AboutNew from './pages/AboutNew';
 const App = () => {
   return (
     <>
+    <Navbar/>
     {/* <Adver/> */}
     {/* <Live/> */}
   
-    <TrainFooter/>
+    {/* <TrainFooter/> */}
     {/* <Feet/> */}
     {/* <FooterRough/> */}
    {/* <Faqnew/> */}
@@ -71,7 +73,7 @@ const App = () => {
      {/* <Pnrfaq/>  */}
        {/* <Trainseat/>    */}
           {/* <Fare/>    */}
-    {/* <FareDetails/>  */}
+    <FareDetails/> 
      {/* <Faq/> */}
    {/* <Seat/> */}
        

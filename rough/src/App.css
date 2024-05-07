@@ -1588,7 +1588,7 @@ h2,
 /* /footer/ */
 
 .alert-primary{
-  color: white !important;
+  color: #a2a1b7;
   background-color:rgb(49, 57, 71) !important ;
   font-size: 16px;
   font-family: Poppins, sans-serif !important;
@@ -1596,7 +1596,7 @@ h2,
 }
 
 .footer-copyrights li a {
-  color: white;
+  color: #a2a1b7;
   text-decoration: none;
   font-size: 16px;
   font-family: 'Poppins', sans-serif !important;
