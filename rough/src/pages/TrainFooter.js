@@ -8,7 +8,7 @@ const TrainFooter = () => {
   return (
     <>
       <footer class="alert alert-primary mb-0">
-        <section class=" py-5">
+        <section class="container py-5">
           <div class="row">
             <div class="col-md-2">
               <img src={Logo3} alt="Yatri" width="300" class="mb-3" />

@@ -43,11 +43,11 @@ import Navbar from './pages/Navbar';
 const App = () => {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
     {/* <Adver/> */}
     {/* <Live/> */}
   
-    {/* <TrainFooter/> */}
+    <TrainFooter/>
     {/* <Feet/> */}
     {/* <FooterRough/> */}
    {/* <Faqnew/> */}
