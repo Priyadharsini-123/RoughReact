@@ -1,86 +1,29 @@
-import React from 'react'
-import Fare from '../src/pages/Fare'
+import Header from "./Component/Header";
+import Whychoose from "./Component/Home";
+import './css/custom-bootstrap.css'
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import FareRough from './pages/FareRough';
-import Rough from './pages/Rough';
-import Choose from './pages/Choose'
-import Faq from './pages/Faq';
-import FareDetails from './pages/FareDetails';
-
-import Trainseat from './pages/Trainseat';
-import Pnrfaq from './pages/Pnrfaq';
-import Livefaq from './pages/Livefaq';
-import DeskSeat from './pages/DeskSeat';
-import Trainsonwheelslivefaq from './pages/Trainsonwheelslivefaq';
-import Trainsonwheelscoachfaq from './pages/Farecomparefaq';
-import Trainonwheelspnrfaq from './pages/Trainonwheelspnrfaq';
-
-import Desktop from './pages/Desktop';
-import Mobile from './pages/Mobile';
-import Wheelsseat from './pages/Wheelsseat';
-import WebsiteNavbar from './pages/WebsiteNavbar';
-import Footer from './pages/Footer';
-import Sitting from './pages/Sitting';
-import Navigation from './pages/Navigation';
-import Seatfaq from './pages/Farecomparefaq';
-
-import TrainFooter from '../src/pages/TrainFooter';
-import Feet from './pages/Feet';
-import FooterRough from './pages/FooterRough';
-
-import Ad from './pages/Ad';
-import About from './pages/About';
-import Adver from './pages/Adver';
-import Live from './pages/Live';
-import AboutNew from './pages/AboutNew';
-import Navbar from './pages/Navbar';
-
-
-
-
-
-const App = () => {
+import Home from "./Component/Home";
+import Choose from "./Component/Choose";
+import Video from "./Component/Video";
+import { Work } from "./Component/Work";
+import TestimonialSection, { Rating } from "./Component/TestimonialSection";
+import { OurRoute } from "./Component/OurRoute";
+import DownloadApp from "./Component/DownloadApp";
+function App() {
   return (
     <>
-    {/* <Navbar/> */}
-    {/* <Adver/> */}
-    {/* <Live/> */}
-  
-    <TrainFooter/>
-    {/* <Feet/> */}
-    {/* <FooterRough/> */}
-   {/* <Faqnew/> */}
-  {/* <Ad/> */}
-  {/* <About/> */}
-  {/* <AboutNew/> */}
-    {/* <WebsiteNavbar/> */}
-    {/* <Navigation/> */}
-    {/* <Seatfaq/> */}
-     {/* <Wheelsseat/>  */}
-     {/* <Sitting/> */}
-     {/* <Pages/> */}
-    {/* <Mobile/> */}
-    {/* <Desktop/> */}
-      {/* <DeskSeat/>  */}
-    {/* <CoachPosition/> */}
-    {/* <Trainonwheelspnrfaq/> */}
-    {/* <Trainsonwheelscoachfaq/> */}
-  {/* <Trainsonwheelslivefaq/> */}
-    {/* <DeskSeat/> */}
-    {/* <Trainseat/> */}
-    {/* <Livefaq/> */}
-     {/* <Pnrfaq/>  */}
-       {/* <Trainseat/>    */}
-          {/* <Fare/>    */}
-    <FareDetails/> 
-     {/* <Faq/> */}
-   {/* <Seat/> */}
-       
-   {/* <Footer/>   */}
+   <Header/>
+   
+    <Home/>
+    <Choose/>
+    <Video/>
+    <Work/>
+    {/* <TestimonialSection/> */}
+    <OurRoute/>
+    <DownloadApp/>
     </>
-  )
+    
+  );
 }
 
-export default App
-
+export default App;
